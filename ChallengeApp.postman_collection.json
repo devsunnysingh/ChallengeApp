@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "5a5d65d3-b644-467d-8f62-7d7a648cb06d",
+		"name": "ChallengeApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15988133",
+		"_collection_link": "https://speeding-crater-511617.postman.co/workspace/My-workspace~8321bb15-ae3c-4f7d-b81a-0541bbcc11dc/collection/15988133-5a5d65d3-b644-467d-8f62-7d7a648cb06d?action=share&source=collection_link&creator=15988133"
+	},
+	"item": [
+		{
+			"name": "ListAllChallenges",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/challenges",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostChallenge",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"month\": \"Jan\",\r\n    \"description\": \"Exercise\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/challenges",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Challenge",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"month\": \"April\",\r\n        \"description\": \"Poem recital\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/challenges/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenges",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Challenge by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/challenges/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenges",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Challenge by month Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/challenges/March",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenges",
+						"March"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
